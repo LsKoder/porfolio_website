@@ -1,2 +1,4 @@
 # porfolio_website
-Personal Website on sergio.altervista.org
+Personal Website published on http:\\sergio.altervista.org
+
+CSS Styles are based on Bootstrap 3
