@@ -1,0 +1,213 @@
+/** Content: CSS Styles for Website
+    Author:  Sergio Manetta **/
+
+/** Body **/
+body {
+  font-family: 'Libre Baskerville', serif;
+}
+a {
+  transition: 0.3s;
+}
+
+/** Jumbotron **/
+.jumbotron {
+  background-image: url("../img/jumbotron.jpg");
+  color: aquamarine;
+  min-height: 100vh;
+  margin: 0px;
+  animation-name: brightness;
+  animation-duration: 1.4s;
+} 
+@keyframes brightness {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.jumbotron-resized {
+  min-height: 20vh;
+}
+
+/** Navbar **/
+.navbar {
+  margin-bottom: 0px;   
+}
+.navbar-header {
+  font-family: 'Indie Flower', cursive;
+  color: rgb(214, 214, 214);
+  font-size: 26px;
+  letter-spacing: 2px;
+  background-color: rgb(48, 47, 47);
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 18px 50px 50px;
+  text-shadow: 3px 4px 2px rgb(206, 205, 205);
+}
+.navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+.navbar-nav > li > a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  letter-spacing: .15em;
+}
+.navbar-nav:hover > li > a {
+  color: grey;
+}
+.navbar-nav > li > a:hover  {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/** Image profile on jumbotron **/
+.image_profile {
+  max-width: 170px;
+  border-radius: 100%;
+  border: 5px solid #f2f3f5;
+  margin: 2%;
+  margin-top: 6%;
+}
+.image_profile:hover  {
+  animation:shake .82s cubic-bezier(.36,.07,.19,.97) both;transform:translate3d(0,0,0)
+}
+@keyframes shake {
+  0%, to{transform:translate3d(0,0,0)}
+  10%,30%,50%,70%,90% {transform:translate3d(-1px,0,0)}
+  20%,40%,60%,80% {transform:translate3d(1px,0,0)}
+}
+
+/** Animate text on jumbotron when slide in **/
+.animated_slidein_1, .animated_slidein_2, .animated_slidein_3 {
+  margin-top: 0px;
+  opacity: 1.0;
+}
+.animated_slidein_1 {
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+.animated_slidein_2 {
+  animation-name: slidein;
+  animation-duration: 2s;
+}
+.animated_slidein_3 {
+  animation-name: slidein_3;
+  animation-duration: 3s;
+  margin-top: 1%;
+}
+@keyframes slidein {
+  0% {margin-top: 30px; opacity: 0; }
+  100% {margin-top: 0px; opacity: 1.0;}
+}
+@keyframes slidein_3 {
+  0% {margin-top: 5%; opacity: 0; }
+  100% {margin-top: 1%; opacity: 1.0;}
+}
+
+/** Button on jumbotron **/
+.jumbotron .btn-left, .jumbotron .btn-right {
+  margin-top: 3%;
+  transition: 0.3s;
+}
+.jumbotron .btn-left {
+  margin-right: 1%;
+}
+.jumbotron .btn-left:hover {
+  background-color: transparent;
+  color: white;
+}
+.jumbotron .btn-right {
+  margin-left: 1%;
+  background-color: transparent;
+  color: whitesmoke;
+}
+.jumbotron .btn-right:hover {
+  color: white;
+  border: 1px solid transparent;
+}
+.jumbotron {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/** Resume Section **/
+.resume_content {
+  display: none;
+  min-height: 80vh;
+  background-color: white;
+}
+.skill_container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.skills_title {
+  font-size: 34px;
+  text-align: center;
+  color: #22A39F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 3%;
+}
+.skills_list ul {
+  list-style-type: none;
+  color: #353535;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.skills_list .glyphicon {
+  float: right;
+  color: #DFE0E0; 
+	font-size: 13px;
+  transition: all 0.3s;
+  letter-spacing: .2em;  
+}
+.skills_list li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.skills_list .filled {
+  color: #22A39F;
+}
+.skills_list li:hover {
+  background-color: rgb(217, 252, 251);; 
+  cursor: default;
+}
+.skills_list li:hover .glyphicon {
+  margin-left: 2px;
+}
+.resume_download {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+/** Footer containing contact information **/
+footer {
+  background-color: #3a3f46;
+  text-align: center;
+  line-height: 45px;
+  padding: 2%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+footer a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+footer > .contact_icon > a {
+  font-size: 26px;
+  padding: 10px;  
+}
