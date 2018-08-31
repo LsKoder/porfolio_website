@@ -67,7 +67,7 @@ a {
   border-radius: 100%;
   border: 5px solid #f2f3f5;
   margin: 2%;
-  margin-top: 6%;
+  margin-top: 5%;
 }
 .image_profile:hover  {
   animation:shake .82s cubic-bezier(.36,.07,.19,.97) both;transform:translate3d(0,0,0)
@@ -86,15 +86,34 @@ a {
 .animated_slidein_1 {
   animation-name: slidein;
   animation-duration: 1s;
+  font-size: 40px;
 }
 .animated_slidein_2 {
   animation-name: slidein;
   animation-duration: 2s;
+  font-size: 28px;
 }
 .animated_slidein_3 {
   animation-name: slidein_3;
   animation-duration: 3s;
-  margin-top: 1%;
+  margin-top: 2%;
+  font-size: 22px;
+}
+@media only screen and (max-width: 800px) {
+  .animated_slidein_1 {
+    padding: 3%;
+    font-size: 28px;
+  }
+  .animated_slidein_2 {
+    font-size: 18px;
+  }
+  .animated_slidein_3 {
+    font-size: 16px;
+    padding: 4%;
+  }
+  .animated_slidein_3 br {
+    display: none;
+  }
 }
 @keyframes slidein {
   0% {margin-top: 30px; opacity: 0; }
@@ -102,7 +121,7 @@ a {
 }
 @keyframes slidein_3 {
   0% {margin-top: 5%; opacity: 0; }
-  100% {margin-top: 1%; opacity: 1.0;}
+  100% {margin-top: 2%; opacity: 1.0;}
 }
 
 /** Button on jumbotron **/
